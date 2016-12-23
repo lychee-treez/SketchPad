@@ -1,0 +1,25 @@
+body {
+
+	background-color: black;
+}
+
+
+#container {
+	width: 100%;
+	left: 150px;
+	display: table;
+}
+
+.box {
+	display: inline-block;
+	background-color: black;
+	width: 1em;
+	height: 1em;
+	
+	
+}
+
+.marked {
+
+	background-color: green;
+}
