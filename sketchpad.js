@@ -1,41 +1,40 @@
-var size = 48;
-var color;
+var size = 80;
+var color = 'blue';
 
 
 $(document).ready(function() {
-	
+
 	for (var i = 0; i < size; i++){
-		for(var j = 0; j < size; j++){
+		for(var j = 0; j < size+50; j++){
 			$('#container').append('<div class="box"> </div>');
 		}
 		$('#container').append('<br>');
 	}
 
+	$('#red').click(function(){
+		color = 'red';
+	})
+
+	$('#blue').click(function(){
+		color = 'blue';
+	})
+
+	$('#green').click(function(){
+		color = 'green';
+	})
+
 	$('.box').hover(function(){
-		$(this).addClass('marked');
+		console.log("colored");
+		$(this).addClass(color);
 	});
 
 });
 
 var restart = function(){
-
+	console.log("in restart");
 	$(document).ready(function(){
-		$('.marked').removeClass('marked');
+		$('.blue').removeClass('blue');
+		$('.green').removeClass('green');
+		$('.red').removeClass('red');
 	});
-
 }
-
-/*function changeColor(var color){
-
-	$(document).ready(function(){
-		$('.box').hover(function(){
-			if (color == 'blue'){
-				$(this).addClass('blue');
-			} else if (color == 'green'){
-				$(this).addClass('green');
-			} else if (color == 'red'){
-				$(this).addClass('red');
-			}
-		});
-	});
-}*/
