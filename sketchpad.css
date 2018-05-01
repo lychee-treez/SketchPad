@@ -1,0 +1,61 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #fffffa;
+}
+
+h1 {
+	flex: 1;
+	margin: auto;
+	text-align: center;
+	font-family: sans-serif;
+	color: #6666ff;
+	width: 75%
+}
+
+
+#container {
+	flex: 2;
+	border: 1px solid red;
+	text-align: center;
+	margin: auto;
+	left: 150px;
+	display: table;
+
+}
+
+.box {
+	display: inline-block;
+	background-color: black;
+	width: 5px;
+	height: 5px;
+
+}
+
+#buttons{
+	flex: 3;
+	text-align: center;
+	margin: auto;
+}
+
+#erase, #blue, #red, #green {
+	font-family: Arial;
+	font-weight: bold;
+	background-color: black;
+	margin: 10px 30px;
+	width: 50px;
+	color: white;
+}
+
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: red;
+}
